@@ -1,0 +1,149 @@
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222222;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  background-color: #dbeafe;
+  padding: 30px 0;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* SECTION */
+
+section {
+  background-color: white;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #1d4ed8;
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+}
+
+/* SHARED BACKGROUND BOX */
+
+.bg-box {
+  height: 220px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Background-color */
+.bg-color-demo {
+  background-color: #2563eb;
+  /* background-color: red; */
+  /* background-color: rgb(34, 196, 43); */
+  /* background-color: hsl(280, 70%, 55%); */
+}
+
+/* Background-image */
+.bg-image-demo {
+  background-image: url(https://picsum.photos/600/400?random=10);
+}
+
+/* Background-repeat */
+.bg-repeat-demo {
+  color: black;
+  background-image: url(https://picsum.photos/100/100?random=11);
+
+  /* background-repeat: repeat; */
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+}
+
+/* Background-size */
+.bg-size-demo {
+  background-image: url("https://picsum.photos/600/400?random=12");
+
+  background-repeat: no-repeat;
+
+  /* background-size: contain;  */
+  /* contain will show the entire image inside the background, will end up with whitespace if the image and element aren't 100% the same width/height */
+
+  /* background-size: cover; */
+  /* cover will have the image covering the entire background however if the image and element are not 100% the same height/width then part of the image will be lost on the top/bottom OR left/right depending on which reaches the edge of the element  first */
+
+  /* background-size: 200px; */
+  /* background-size: 100% 100%; */
+}
+
+/* Background-position */
+.bg-position-demo {
+  background-image: url("https://picsum.photos/600/400?random=13");
+  background-size: cover;
+  background-position: center;
+  /* background-position: top left; */
+  /* background-position: bottom right; */
+}
+
+/* Background-attachment (Parallax) */
+.parallax-box {
+  height: 300px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 24px;
+
+  background-image: url("https://picsum.photos/1200/800?random=20");
+
+  background-size: cover;
+  background-position: center;
+
+  background-attachment: fixed;
+  /* background-attachment: scroll; */
+  /* background-attachment: local; */
+}
+
+/* Background shorthand */
+.bg-shorthand-demo {
+  background: #111827 url("https://picsum.photos/600/400?random=14") center /
+    cover no-repeat;
+}
+
+/* Order */
+/* color image position / size repeat */
+
+/* You don't have to use ALL of the properties at once */
+/* background: red */
+/* background: url("https://picsum.photos/600/400?random=14") */
+/* background: url("https://picsum.photos/600/400?random=14") no-repeat center */

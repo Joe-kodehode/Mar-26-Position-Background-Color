@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors</title>
+    <link rel="stylesheet" href="colors.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>CSS Colors</h1>
+        <p>This page shows different ways to write colors in CSS</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Named Colors</h2>
+        <p>
+          CSS includes color names like red, blue, green, purple and chartruse
+        </p>
+
+        <div class="example-row">
+          <div class="color-box" id="chartruse">
+            background-color: chartruse
+          </div>
+          <div class="color-box" id="fuchsia">background-color: fuchsia</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Hex</h2>
+        <p>Hex colors start with a # and use numbers and letters from 0-F</p>
+        <p>The numbers / letter represent Red, Green and Blue values.</p>
+        <p>
+          The first two are Red, Middle two are Green and last two are Blue.
+        </p>
+
+        <div class="example-row">
+          <div class="color-box" id="darkgrey">#222222</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>RGB</h2>
+        <p>RGB stands for Red Green and Blue</p>
+        <p>RGB is represented by numbers from 0-255</p>
+
+        <div class="example-row">
+          <div class="color-box" id="rgb-1">rgb(34, 197, 94)</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>RGBA</h2>
+        <p>RGBA is like RGB, but the A controls transparency.</p>
+
+        <div class="example-row">
+          <div class="color-box" id="rgba-1">rgba(255, 45, 100, 1)</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>HSL</h2>
+        <p>HSL stands for Hue, Saturation and Lightness</p>
+
+        <div class="example-row">
+          <div class="color-box" id="hsl-1">hsl(280, 70%, 55%)</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>oklch</h2>
+        <p>What “OKLCH” stands for</p>
+        <p>O → Perceptual lightness (how light/dark a color looks to humans)</p>
+        <p>K → (part of the OK color space name, from Oklab)</p>
+        <p>L → Lightness</p>
+        <p>C → Chroma (color intensity / saturation)</p>
+        <p>H → Hue (the actual color angle, like red, blue, etc.)</p>
+
+        <div class="example-row">
+          <div class="color-box" id="oklch-1">oklch</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Text Color and Background Color</h2>
+        <p>
+          We can color the text with <strong>color</strong> and the background
+          with <strong>background-color</strong>.
+        </p>
+
+        <div class="text-example">
+          This text uses color and background-color.
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
